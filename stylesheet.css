@@ -1,0 +1,397 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgba(122,191,191, 0.5);
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+p, dt, dd, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+dt {
+    font-weight: bold;
+    text-align: center;
+}
+
+dd {
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.good-eats-street-tacos {
+    display: none;
+}
+#tacos {
+    width: 31.45%;
+    margin-left: 84px;
+    margin-right: 10px;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.nav-top div {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+} 
+
+nav a[href="#home"] span {
+    display: none;
+}
+
+nav h3 {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: 1280px;
+    height: 104px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .2);
+}
+
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: #EB5428;
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul div {
+    text-align: center;
+}
+
+nav span {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+nav img {
+    width: 60px;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+} 
+
+.buffer {
+    width: 1280px;
+    height: 148.5px;
+    margin-bottom: 100px;
+}
+
+.sidenav {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid #EB5428 2px;
+    padding: 0;
+    height: 600px;
+    background-color: #fff;
+}
+
+.sidenav svg {
+    display: block;
+    margin: 20px 20px auto 20px;
+}
+
+.sidenav li {
+    list-style-type: none;
+    color: #EB5428;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.sidenav a {
+    color: #EB5428;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidenav a:hover {
+    background-color: #EB5428;
+    color: white;
+}
+
+.paragraph-1 {
+    float: right;
+    display:block;
+    font-size: 16px;
+    margin-right: 120px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.paragraph-2 {
+    float: right;
+    display:block;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 120px;
+    line-height: 30px;
+}
+
+
+aside h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 24px;
+}
+
+#details {
+    clear: both;
+    background-color: #0D0D0D;
+    
+}
+
+#details h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#details h3, #details dl, #details dt, #details dd {
+    color: #7ABFBF;
+}
+
+#details dd {
+    font-weight: lighter;
+}
+
+.details-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.home {
+    background-color: #EB5428;
+    position: absolute;
+    left: 0;
+    padding: 20px 10px;
+}
+
+.search h4 {
+    display: none;
+}
+
+.search {
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search svg {
+    background-color: #EB5428;
+    stroke: white;
+    padding: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.search svg:hover {
+    background-color: #fff;
+    stroke: #EB5428;
+}
+
+.search a {
+    padding: 0px;
+    margin: 0px;
+}
+
+input {
+    font-size: 16px;
+    border: solid #EB5428 1px;
+    width: 200px;
+    height: 38px;
+}
+
+.avatar {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    height: 85px;
+    padding: 10px;
+}
+
+.avatar svg {
+    display: block;
+}
+
+.avatar span {
+    text-align: center;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.avatar:hover {
+    background-color: #EB5428;
+}
+
+.icon-tabler-user-circle {
+    transition: all 0.5s ease-in-out 0.2s;
+
+}
+
+.avatar:hover .icon-tabler-user-circle {
+    stroke: white;
+}
+
+.avatar:hover span {
+    color: white;
+}
+
+.nav-food {
+    height: 104px;
+    width: 80px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-food:hover {
+    background-color: #EB5428;
+}
+
+.nav-food a {
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-food:hover a {
+    color: white;
+}
+
+#ingredients h3 {
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.ingredients {
+    margin-left: 30px;
+}
+
+.ingredients li {
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+.ingredients-directions-grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#directions h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 140px;
+
+}
+
+.directions li {
+    list-style-type: normal;
+    line-height: 40px;
+}
+
+#extra-dishes {
+    background-color: #7ABFBF;
+}
+
+#extra-dishes h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dishes-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.rating {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.socialmedia {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+#copyright{
+    float:right;
+}
