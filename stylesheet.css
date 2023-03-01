@@ -395,3 +395,40 @@ input {
 #copyright{
     float:right;
 }
+@media screen and (max-width: 1024px){
+    body {
+        width: 768px;
+        max-width: 768px;
+    }
+    }
+
+@media screen and (max-width: 768px) {
+     body {
+         width: 414px;
+         max-width: 414px;
+        }
+    }
+
+@media print {
+
+    @page {
+        margin: 0.5in;
+        }
+    
+    html {
+        font-family: serif;
+        }
+    
+     img {
+        display: none;
+        }
+    
+    nav {
+        display: none;
+        }
+    
+     .sidenav {
+        display: none;
+        }
+    
+    }
